@@ -1,0 +1,20 @@
+.content {
+  width: 100px;
+  height: 200px;
+  background-color: gold;
+  .content-container {
+      width: (50px / 2);
+      height: 100px / 2;
+      // background-color: blue;
+      background-color: @mainColor;
+  }
+}
+
+.base-content {
+  width: 100px;
+  height: 200px;
+  background-color: @baseColor;
+  .base-content-container {
+    width: clamp(50px, 30%, 100px);
+  }
+}
